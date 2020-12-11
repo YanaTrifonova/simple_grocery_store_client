@@ -22,13 +22,25 @@ export default function SignUpPage(key, value) {
     }
 
     useEffect(() =>{
-        if (localStorage.getItem("name") === "null") localStorage.setItem("name", user.name);
-        if (localStorage.getItem("name") === "null") localStorage.setItem("email", user.email);
-        if (localStorage.getItem("name") === "null") localStorage.setItem("jwt", user.jwt);
+        if (user.name !== null && user.email !== null && user.jwt !== null) {
+            localStorage.setItem("name", user.name);
+            localStorage.setItem("email", user.email);
+            localStorage.setItem("jwt", user.jwt);
+        }
 
-        console.log("chek userName", localStorage.getItem("name"))
         setUserName(localStorage.getItem("name"));
+
     }, [user]);
+
+    function logout() {
+        localStorage.setItem("name", "null");
+        localStorage.setItem("email", "null");
+        localStorage.setItem("jwt", "null");
+        setUserName("null");
+        setName("");
+        setEmail("");
+        setPassword("");
+    }
 
     return (
         <div>
@@ -38,8 +50,11 @@ export default function SignUpPage(key, value) {
                  <div className="block block--left">
                      <img className="block--left-img" src={signUp}/>
                  </div>
-                 <div className="block block--right">
-                     <h1 className="logging-greeting">{userName} successfully logged in</h1>
+                 <div className="block block--right greeting">
+                     <div className="greeting">
+                         <h1 className="logging-greeting">{userName} successfully logged in</h1>
+                         <button onClick={logout} className="greeting--button">Log out</button>
+                     </div>
                  </div>
              </div>
              :
