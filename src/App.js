@@ -16,14 +16,14 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <div className="navigation">
-                    <a className="navigation-item" href="/signUp">
-                        <img className="navigation-img" alt="signUp" src={signUp}/></a>
-                    <a className="navigation-item" href="/">
-                        <img className="navigation-img" alt="home" src={home}/></a>
-                    <a className="navigation-item" href="/orderFood">
-                        <img className="navigation-img" alt="orderFood" src={orderFood}/></a>
-                    <a className="navigation-item" href="/myOrder">
-                        <img className="navigation-img" alt="myOrder" src={myOrder}/></a>
+                    <a className="navigation-item tooltip" href="/signUp">
+                        <img className="navigation-img" alt="signUp" src={signUp}/><span className="tooltiptext">Sign up</span></a>
+                    <a className="navigation-item tooltip" href="/">
+                        <img className="navigation-img" alt="home" src={home}/><span className="tooltiptext">Go back home</span></a>
+                    <a className="navigation-item tooltip" href="/orderFood">
+                        <img className="navigation-img" alt="orderFood" src={orderFood}/><span className="tooltiptext">Order products</span></a>
+                    <a className="navigation-item tooltip" href="/myOrder">
+                        <img className="navigation-img" alt="myOrder" src={myOrder}/><span className="tooltiptext">View your current order</span></a>
                 </div>
                 <Switch>
                     <Route path="/signUp" component={SignUpPage}/>
