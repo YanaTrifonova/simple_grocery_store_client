@@ -6,7 +6,7 @@ import "../index.css";
 import "./SignUpPage.css";
 import signUp from "../images/page/signUp.gif"
 
-export default function SignUpPage(key, value) {
+export default function SignUpPage() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -48,7 +48,7 @@ export default function SignUpPage(key, value) {
              ?
              <div className="blocks">
                  <div className="block block--left">
-                     <img className="block--left-img" src={signUp}/>
+                     <img className="block--left-img" src={signUp} alt="signUp"/>
                  </div>
                  <div className="block block--right greeting">
                      <div className="greeting">
@@ -60,7 +60,7 @@ export default function SignUpPage(key, value) {
              :
              <div className="blocks">
                  <div className="block block--left">
-                     <img className="block--left-img" src={signUp}/>
+                     <img className="block--left-img" src={signUp} alt="signUp"/>
                  </div>
                  <div className="block block--right">
                      <div className="input-container">
