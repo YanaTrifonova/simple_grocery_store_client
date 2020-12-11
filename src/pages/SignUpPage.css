@@ -8,3 +8,8 @@
     margin-bottom: 5px;
     margin-top: 10px;
 }
+
+.logging-greeting {
+    margin: 0 auto;
+    align-self: center;
+}

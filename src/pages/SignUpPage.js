@@ -22,9 +22,9 @@ export default function SignUpPage(key, value) {
     }
 
     useEffect(() =>{
-        localStorage.setItem("name", user.name);
-        localStorage.setItem("email", user.email);
-        localStorage.setItem("jwt", user.jwt);
+        if (localStorage.getItem("name") === "null") localStorage.setItem("name", user.name);
+        if (localStorage.getItem("name") === "null") localStorage.setItem("email", user.email);
+        if (localStorage.getItem("name") === "null") localStorage.setItem("jwt", user.jwt);
 
         console.log("chek userName", localStorage.getItem("name"))
         setUserName(localStorage.getItem("name"));
@@ -39,7 +39,7 @@ export default function SignUpPage(key, value) {
                      <img className="block--left-img" src={signUp}/>
                  </div>
                  <div className="block block--right">
-                     <h1>{userName} successfully logged in</h1>
+                     <h1 className="logging-greeting">{userName} successfully logged in</h1>
                  </div>
              </div>
              :
