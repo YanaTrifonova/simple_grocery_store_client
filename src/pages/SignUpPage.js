@@ -26,6 +26,7 @@ export default function SignUpPage() {
             localStorage.setItem("name", user.name);
             localStorage.setItem("email", user.email);
             localStorage.setItem("jwt", user.jwt);
+            localStorage.setItem("id", user.id);
         }
 
         setUserName(localStorage.getItem("name"));
@@ -36,6 +37,7 @@ export default function SignUpPage() {
         localStorage.setItem("name", "null");
         localStorage.setItem("email", "null");
         localStorage.setItem("jwt", "null");
+        localStorage.setItem("id", "null");
         setUserName("null");
         setName("");
         setEmail("");
