@@ -8,7 +8,7 @@ export default function reducer(state = initialState, action) {
         case "SET_LOADING" : {
             return {
                 ...state,
-                loading: true,
+                isLoaded: true,
             };
         }
 
@@ -23,7 +23,7 @@ export default function reducer(state = initialState, action) {
 
             return {
                 categoryName: newState,
-                loading: false,
+                isLoaded: false,
             };
         }
 
