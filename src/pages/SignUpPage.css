@@ -1,0 +1,10 @@
+.input-container {
+    margin: 0 auto;
+    align-self: center;
+}
+
+.input-label {
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}

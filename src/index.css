@@ -9,3 +9,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.blocks {
+  display: flex;
+  height: 100vh;
+}
+
+.block {
+  min-height: 100px;
+  width: calc(50% + 11rem);
+}
+
+.block--left {
+  display: flex;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 12rem) 100%, 0% 100%);
+}
+
+.block--right {
+  display: flex;
+  background-color: rgb(164, 224, 174);
+  margin: 15px 15px 15px -11rem;
+  clip-path: polygon(12rem 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.block--left-img {
+  margin: 0 auto;
+  align-self: center;
+}
