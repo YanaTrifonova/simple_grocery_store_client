@@ -1,0 +1,22 @@
+.category-text {
+    text-align: left;
+}
+
+.category-link {
+    text-decoration: none;
+    color: black;
+}
+
+.category-link:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.category-link:hover {
+    text-decoration: underline;
+}

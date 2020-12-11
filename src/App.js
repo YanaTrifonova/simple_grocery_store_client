@@ -10,6 +10,7 @@ import home from "./images/navigation/home.png";
 import signUp from "./images/navigation/signUp.png";
 import myOrder from "./images/navigation/myOrder.png";
 import orderFood from "./images/navigation/orderFood.png";
+import OrderFoodItemsPage from "./pages/OrderFoodItemsPage";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Switch>
                     <Route path="/signUp" component={SignUpPage}/>
                     <Route path="/myOrder" component={MyOrderPage}/>
+                    <Route path="/orderFood/:id" component={OrderFoodItemsPage}/>
                     <Route path="/orderFood" component={OrderFoodPage}/>
                     <Route path="/" component={MyHomePage}/>
                 </Switch>
