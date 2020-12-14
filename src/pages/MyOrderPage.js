@@ -41,7 +41,7 @@ export default function MyOrderPage() {
                          {orderItems?.map((item, index) => {
                              return (
                                  <tr className="active-row" key={index}>
-                                     <td>{index}</td>
+                                     <td>{index + 1}</td>
                                      <td className="leftered">{item.productName}</td>
                                      <td>{item.price}</td>
                                      <td>{item.price * item.numberOfItems}</td>
