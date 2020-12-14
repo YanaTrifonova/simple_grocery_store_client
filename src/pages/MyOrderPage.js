@@ -33,8 +33,8 @@ export default function MyOrderPage() {
                          <tr>
                              <th>Index</th>
                              <th>Product name</th>
-                             <th>Price per item</th>
-                             <th>Total price</th>
+                             <th>Price per item, $</th>
+                             <th>Total price, $</th>
                          </tr>
                          </thead>
                          <tbody>
